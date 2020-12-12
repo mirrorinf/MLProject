@@ -1,0 +1,10 @@
+conan install /Users/chuxiaomin/CLionProjects/MLProject -if=/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug -pr=xcode12
+ERROR: Conanfile not found at /Users/chuxiaomin/CLionProjects/MLProject/conanfile.py or /Users/chuxiaomin/CLionProjects/MLProject/conanfile.txt
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/chuxiaomin/CLionProjects/MLProject
+-- A library with LAPACK API found.
+-- A library with LAPACK API found.
+-- BLAS VENDOR:    All
+-- BLAS LIBRARIES: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/Accelerate.framework
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug

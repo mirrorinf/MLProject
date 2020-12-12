@@ -1,0 +1,58 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Performing C++ SOURCE FILE Test arch_native_supported failed with the following output:
+Change Dir: /Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ffa92/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ffa92.dir/build.make CMakeFiles/cmTC_ffa92.dir/build
+Building CXX object CMakeFiles/cmTC_ffa92.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -Darch_native_supported   -march=native -std=gnu++2a -o CMakeFiles/cmTC_ffa92.dir/src.cxx.o -c /Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ffa92
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ffa92.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -Darch_native_supported -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_ffa92.dir/src.cxx.o  -o cmTC_ffa92 
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_ffa92] Error 1
+make: *** [cmTC_ffa92/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b882e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b882e.dir/build.make CMakeFiles/cmTC_b882e.dir/build
+Building C object CMakeFiles/cmTC_b882e.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk   -o CMakeFiles/cmTC_b882e.dir/CheckFunctionExists.c.o   -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b882e
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b882e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_b882e.dir/CheckFunctionExists.c.o  -o cmTC_b882e 
+Undefined symbols for architecture x86_64:
+  "_sgemm_", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_b882e] Error 1
+make: *** [cmTC_b882e/fast] Error 2
+
+
+

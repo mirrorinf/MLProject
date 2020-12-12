@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="MLProject"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\Caskroom\;CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\;CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\;CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\;CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\;CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\xtl\;CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\xsimd\;CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\xtensor\;CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\xtensor-blas\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MLProject">
+				<Option output="/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/MLProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_CBLAS=1"/>
+					<Add option="-DXTENSOR_USE_XSIMD"/>
+					<Add directory="/usr/local/Caskroom/miniconda/base/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 MLProject"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MLProject/fast">
+				<Option output="/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/MLProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_CBLAS=1"/>
+					<Add option="-DXTENSOR_USE_XSIMD"/>
+					<Add directory="/usr/local/Caskroom/miniconda/base/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 MLProject/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/AdaBoost.cpp">
+			<Option target="MLProject"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/AdaBoost.h">
+			<Option target="MLProject"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/Classifier.cpp">
+			<Option target="MLProject"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/Classifier.h">
+			<Option target="MLProject"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/DecisionTree.cpp">
+			<Option target="MLProject"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/DecisionTree.h">
+			<Option target="MLProject"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/KNNMNISTClassifier.cpp">
+			<Option target="MLProject"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/KNNMNISTClassifier.h">
+			<Option target="MLProject"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/NaiveBayes.cpp">
+			<Option target="MLProject"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/NaiveBayes.h">
+			<Option target="MLProject"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/Utility.cpp">
+			<Option target="MLProject"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/Utility.h">
+			<Option target="MLProject"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/WeightedClassifier.h">
+			<Option target="MLProject"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/main.cpp">
+			<Option target="MLProject"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/../../../../usr/local/Caskroom/miniconda/base/lib/cmake/xtl/xtlConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\xtl\"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/../../../../usr/local/Caskroom/miniconda/base/lib/cmake/xtl/xtlConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\xtl\"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/../../../../usr/local/Caskroom/miniconda/base/lib/cmake/xtl/xtlTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\xtl\"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/../../../../usr/local/Caskroom/miniconda/base/lib/cmake/xsimd/xsimdConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\xsimd\"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/../../../../usr/local/Caskroom/miniconda/base/lib/cmake/xsimd/xsimdConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\xsimd\"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/../../../../usr/local/Caskroom/miniconda/base/lib/cmake/xsimd/xsimdTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\xsimd\"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/../../../../usr/local/Caskroom/miniconda/base/lib/cmake/xtensor/xtensorConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\xtensor\"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/../../../../usr/local/Caskroom/miniconda/base/lib/cmake/xtensor/xtensorConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\xtensor\"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/../../../../usr/local/Caskroom/miniconda/base/lib/cmake/xtensor/xtensorTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\xtensor\"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/../../../../usr/local/Caskroom/miniconda/base/lib/cmake/xtensor-blas/xtensor-blasConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\xtensor-blas\"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/../../../../usr/local/Caskroom/miniconda/base/lib/cmake/xtensor-blas/xtensor-blasConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\xtensor-blas\"/>
+		</Unit>
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/../../../../usr/local/Caskroom/miniconda/base/lib/cmake/xtensor-blas/xtensor-blasTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\Caskroom\miniconda\base\lib\cmake\xtensor-blas\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
