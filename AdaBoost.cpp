@@ -4,7 +4,7 @@
 
 #include "AdaBoost.h"
 #include <cmath>
-#include <cstdio>
+#include <iostream>
 
 AdaBoost::AdaBoost(int n_classes, FeatureList &x_train, std::vector<int> &y_train,
                    xt::xarray<double> &initial_weight,
@@ -16,14 +16,14 @@ AdaBoost::AdaBoost(int n_classes, FeatureList &x_train, std::vector<int> &y_trai
     weight = initial_weight;
 
     for (int i = 0; i < weak_classifiers.size(); i++) {
-        printf("training weak No.%d\n", i);
+        std::cout << "training weak No." << i << std::endl;
         weak_classifiers[i]->train(x_train, y_train, weight);
-        printf("predicting on weak No.%d\n", i);
+        std::cout << "predicting on weak No." << i << std::endl;
         auto y_predicted = weak_classifiers[i]->predict(x_train);
 
-        printf("adaptive parameters Round.%d\n", i);
+        std::cout << "adaptive parameters Round." << i << std::endl;
         xt::xarray<int> is_wrong = xt::zeros<int>({N});
-        double error = 0;
+        double error = 1e-8;
         for (int j = 0; j < N; j++) {
             if (y_predicted[j] != y_train[j]) {
                 error += weight[j];
@@ -31,9 +31,7 @@ AdaBoost::AdaBoost(int n_classes, FeatureList &x_train, std::vector<int> &y_trai
             }
         }
 
-        if (error < 1e-6) {
-            error = 1e-6;
-        }
+        std::cout << "error of round " << i << ": " << error << std::endl;
 
         double round_alpha = log((1 - error) / error) + log(K - 1);
         alpha.push_back(round_alpha);

@@ -83,6 +83,23 @@ namespace MNISTUtility {
         }
         return splitted;
     }
+
+    xt::xarray<int> pooled_binary_split(xt::xarray<unsigned char> &x) {
+        const auto& shape = x.shape();
+        assert(shape.size() == 3 && shape[1] == 28 && shape[2] == 28);
+        int N = shape[0];
+        xt::xarray<int> splitted = xt::zeros<int>({N, 14, 14});
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < 14; j++) {
+                for (int k = 0; k < 14; k++) {
+                    if (x(i, 2*j, 2*k) > 127 || x(i, 2*j, 2*k+1) > 127 || x(i, 2*j+1, 2*k) > 127 || x(i, 2*j+1, 2*k+1) > 127) {
+                        splitted(i, j, k) = 1;
+                    }
+                }
+            }
+        }
+        return splitted;
+    }
 }
 
 namespace MushroomUnility {

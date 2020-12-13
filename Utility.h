@@ -14,6 +14,7 @@ namespace MNISTUtility {
     xt::xarray<unsigned char> read_images(const std::string &path);
     std::vector<int> read_labels(const std::string &path);
     xt::xarray<int> binary_split(xt::xarray<unsigned char> &x);
+    xt::xarray<int> pooled_binary_split(xt::xarray<unsigned char> &x);
 }
 
 namespace MushroomUnility {

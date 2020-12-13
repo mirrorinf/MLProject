@@ -4,6 +4,7 @@
 #include "NaiveBayes.h"
 #include "AdaBoost.h"
 #include <algorithm>
+#include "DecisionTree.h"
 
 void mnist_knn_main() {
     auto data_x = MNISTUtility::read_images("/Users/chuxiaomin/Develop/ai/ml/train-images-idx3-ubyte");
@@ -124,6 +125,68 @@ void mnist_naive_bayes_main() {
     }
 }
 
-int main() {
+void mushroom_tree_main() {
+    auto s = MushroomUnility::read_dataset("/Users/chuxiaomin/Develop/ai/ml/agaricus-lepiota.data");
+    auto x_whole = std::get<0>(s);
+    auto y_whole = std::get<1>(s);
+    auto n_value = std::get<2>(s);
 
+    xt::xarray<int> x_train = xt::view(x_whole, xt::range(_, 6000), xt::all());
+    xt::xarray<int> x_validation = xt::view(x_whole, xt::range(6000, _), xt::all());
+    auto y_train = std::vector<int>(y_whole.begin(), y_whole.begin() + 6000);
+    auto y_validation = std::vector<int>(y_whole.begin() + 6000, y_whole.end());
+    xt::xarray<double> weight = xt::ones<double>({6000}) * (1.0 / 6000);
+
+    auto tree = DecisionTree(2, n_value);
+    tree.train(x_train, y_train, weight);
+    auto predicted = tree.predict(x_validation);
+    int correct = 0;
+    for (int i = 0; i < y_validation.size(); i++) {
+        if (predicted[i] == y_validation[i]) {
+            correct++;
+        }
+    }
+    std::cout << "single: " << static_cast<double>(correct) / y_validation.size() << std::endl;
+}
+
+int main() {
+    auto data_x = MNISTUtility::read_images("/Users/chuxiaomin/Develop/ai/ml/train-images-idx3-ubyte");
+    auto data_y = MNISTUtility::read_labels("/Users/chuxiaomin/Develop/ai/ml/train-labels-idx1-ubyte");
+    xt::xarray<int> x_whole = MNISTUtility::pooled_binary_split(data_x);
+    x_whole.reshape({60000, 14 * 14});
+
+    xt::xarray<int> x_train = xt::view(x_whole, xt::range(_, 50000), xt::all());
+    xt::xarray<int> x_validation = xt::view(x_whole, xt::range(50000, _), xt::all());
+    auto y_train = std::vector<int>(data_y.begin(), data_y.begin() + 50000);
+    auto y_validation = std::vector<int>(data_y.begin() + 50000, data_y.end());
+
+    xt::xarray<double> weight = xt::ones<double>({50000}) * (1.0 / 50000);
+
+    std::vector<int> n_value(14 * 14, 2);
+    /*
+    auto tree = DecisionTree(10, n_value);
+    tree.train(x_train, y_train, weight);
+    auto predicted = tree.predict(x_validation);
+    int correct = 0;
+    for (int i = 0; i < y_validation.size(); i++) {
+        if (predicted[i] == y_validation[i]) {
+            correct++;
+        }
+    }
+    std::cout << "single: " << static_cast<double>(correct) / y_validation.size() << std::endl;
+    */
+    std::vector<std::unique_ptr<WeightedClassifier>> weaks;
+    weaks.reserve(5);
+    for (int i = 0; i < 5; i++) {
+        weaks.push_back(std::unique_ptr<WeightedClassifier>(new DecisionTree(10, n_value)));
+    }
+    auto boosted = AdaBoost(10, x_train, y_train, weight, weaks);
+    auto b_predicted = boosted.predict(x_validation);
+    int b_correct = 0;
+    for (int i = 0; i < b_predicted.size(); i++) {
+        if (b_predicted[i] == y_validation[i]) {
+            b_correct++;
+        }
+    }
+    printf("boosted: %lf\n", static_cast<double>(b_correct) / b_predicted.size());
 }

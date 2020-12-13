@@ -6,11 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/chuxiaomin/CLionProjects/MLProject/DecisionTree.cpp
-DecisionTree.h
-/Users/chuxiaomin/CLionProjects/MLProject/DecisionTree.h
-algorithm
--
+/Users/chuxiaomin/CLionProjects/MLProject/AdaBoost.h
+WeightedClassifier.h
+/Users/chuxiaomin/CLionProjects/MLProject/WeightedClassifier.h
 
 /Users/chuxiaomin/CLionProjects/MLProject/DecisionTree.h
 vector
@@ -20,6 +18,24 @@ xtensor.hpp
 WeightedClassifier.h
 /Users/chuxiaomin/CLionProjects/MLProject/WeightedClassifier.h
 
+/Users/chuxiaomin/CLionProjects/MLProject/KNNMNISTClassifier.h
+xtensor.hpp
+-
+
+/Users/chuxiaomin/CLionProjects/MLProject/NaiveBayes.h
+WeightedClassifier.h
+/Users/chuxiaomin/CLionProjects/MLProject/WeightedClassifier.h
+
+/Users/chuxiaomin/CLionProjects/MLProject/Utility.h
+xtensor.hpp
+-
+vector
+-
+string
+-
+tuple
+-
+
 /Users/chuxiaomin/CLionProjects/MLProject/WeightedClassifier.h
 vector
 -
@@ -27,6 +43,22 @@ xtensor.hpp
 -
 exception
 -
+
+/Users/chuxiaomin/CLionProjects/MLProject/main.cpp
+Utility.h
+/Users/chuxiaomin/CLionProjects/MLProject/Utility.h
+KNNMNISTClassifier.h
+/Users/chuxiaomin/CLionProjects/MLProject/KNNMNISTClassifier.h
+iostream
+-
+NaiveBayes.h
+/Users/chuxiaomin/CLionProjects/MLProject/NaiveBayes.h
+AdaBoost.h
+/Users/chuxiaomin/CLionProjects/MLProject/AdaBoost.h
+algorithm
+-
+DecisionTree.h
+/Users/chuxiaomin/CLionProjects/MLProject/DecisionTree.h
 
 /usr/local/Caskroom/miniconda/base/include/xsimd/config/xsimd_align.hpp
 xsimd_instruction_set.hpp

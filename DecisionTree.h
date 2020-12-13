@@ -18,13 +18,14 @@ public:
         bool is_leaf;
         // only valid when is leaf
         int prediction;
-        // only valid when is leaf
+        // only valid when is not leaf
         std::vector<std::shared_ptr<class DecisionTreeNode>> children;
 
         DecisionTreeNode() {
             attribute_index = -1;
             attribute_value = -2333;
             is_leaf = false;
+            prediction = -1;
         }
     };
 
