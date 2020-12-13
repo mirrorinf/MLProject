@@ -5,7 +5,7 @@
 #include "AdaBoost.h"
 #include <algorithm>
 #include "DecisionTree.h"
-
+/*
 void mnist_knn_main() {
     auto data_x = MNISTUtility::read_images("/Users/chuxiaomin/Develop/ai/ml/train-images-idx3-ubyte");
     auto data_y = MNISTUtility::read_labels("/Users/chuxiaomin/Develop/ai/ml/train-labels-idx1-ubyte");
@@ -148,7 +148,7 @@ void mushroom_tree_main() {
     }
     std::cout << "single: " << static_cast<double>(correct) / y_validation.size() << std::endl;
 }
-
+*/
 int main() {
     auto data_x = MNISTUtility::read_images("/Users/chuxiaomin/Develop/ai/ml/train-images-idx3-ubyte");
     auto data_y = MNISTUtility::read_labels("/Users/chuxiaomin/Develop/ai/ml/train-labels-idx1-ubyte");
@@ -161,6 +161,7 @@ int main() {
     auto y_validation = std::vector<int>(data_y.begin() + 50000, data_y.end());
 
     xt::xarray<double> weight = xt::ones<double>({50000}) * (1.0 / 50000);
+    xt::xarray<double> validation_weight = xt::ones<double>({10000}) * (1.0 / 10000);
 
     std::vector<int> n_value(14 * 14, 2);
     /*
@@ -176,17 +177,10 @@ int main() {
     std::cout << "single: " << static_cast<double>(correct) / y_validation.size() << std::endl;
     */
     std::vector<std::unique_ptr<WeightedClassifier>> weaks;
-    weaks.reserve(5);
-    for (int i = 0; i < 5; i++) {
+    constexpr int n_boost = 100;
+    weaks.reserve(n_boost);
+    for (int i = 0; i < n_boost; i++) {
         weaks.push_back(std::unique_ptr<WeightedClassifier>(new DecisionTree(10, n_value)));
     }
-    auto boosted = AdaBoost(10, x_train, y_train, weight, weaks);
-    auto b_predicted = boosted.predict(x_validation);
-    int b_correct = 0;
-    for (int i = 0; i < b_predicted.size(); i++) {
-        if (b_predicted[i] == y_validation[i]) {
-            b_correct++;
-        }
-    }
-    printf("boosted: %lf\n", static_cast<double>(b_correct) / b_predicted.size());
+    auto boosted = AdaBoost(10, x_train, y_train, weight, weaks, x_validation, y_validation, validation_weight);
 }
