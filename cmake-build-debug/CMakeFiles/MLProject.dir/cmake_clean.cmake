@@ -2,7 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/MLProject.dir/AdaBoost.cpp.o"
   "CMakeFiles/MLProject.dir/Classifier.cpp.o"
   "CMakeFiles/MLProject.dir/DecisionTree.cpp.o"
-  "CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.o"
+  "CMakeFiles/MLProject.dir/KNN.cpp.o"
   "CMakeFiles/MLProject.dir/NaiveBayes.cpp.o"
   "CMakeFiles/MLProject.dir/Utility.cpp.o"
   "CMakeFiles/MLProject.dir/main.cpp.o"

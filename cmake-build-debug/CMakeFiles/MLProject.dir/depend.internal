@@ -342,9 +342,9 @@ CMakeFiles/MLProject.dir/DecisionTree.cpp.o
  /usr/local/Caskroom/miniconda/base/include/xtl/xtype_traits.hpp
  /usr/local/Caskroom/miniconda/base/include/xtl/xvariant.hpp
  /usr/local/Caskroom/miniconda/base/include/xtl/xvariant_impl.hpp
-CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.o
- /Users/chuxiaomin/CLionProjects/MLProject/KNNMNISTClassifier.cpp
- /Users/chuxiaomin/CLionProjects/MLProject/KNNMNISTClassifier.h
+CMakeFiles/MLProject.dir/KNN.cpp.o
+ /Users/chuxiaomin/CLionProjects/MLProject/KNN.cpp
+ /Users/chuxiaomin/CLionProjects/MLProject/KNN.h
  /usr/local/Caskroom/miniconda/base/include/xflens/cxxblas/auxiliary/auxiliary.h
  /usr/local/Caskroom/miniconda/base/include/xflens/cxxblas/auxiliary/auxiliary.tcc
  /usr/local/Caskroom/miniconda/base/include/xflens/cxxblas/auxiliary/complex.h
@@ -2203,7 +2203,7 @@ CMakeFiles/MLProject.dir/Utility.cpp.o
 CMakeFiles/MLProject.dir/main.cpp.o
  /Users/chuxiaomin/CLionProjects/MLProject/AdaBoost.h
  /Users/chuxiaomin/CLionProjects/MLProject/DecisionTree.h
- /Users/chuxiaomin/CLionProjects/MLProject/KNNMNISTClassifier.h
+ /Users/chuxiaomin/CLionProjects/MLProject/KNN.h
  /Users/chuxiaomin/CLionProjects/MLProject/NaiveBayes.h
  /Users/chuxiaomin/CLionProjects/MLProject/Utility.h
  /Users/chuxiaomin/CLionProjects/MLProject/WeightedClassifier.h
@@ -2326,6 +2326,7 @@ CMakeFiles/MLProject.dir/main.cpp.o
  /usr/local/Caskroom/miniconda/base/include/xtensor/xmime.hpp
  /usr/local/Caskroom/miniconda/base/include/xtensor/xnoalias.hpp
  /usr/local/Caskroom/miniconda/base/include/xtensor/xnorm.hpp
+ /usr/local/Caskroom/miniconda/base/include/xtensor/xnpy.hpp
  /usr/local/Caskroom/miniconda/base/include/xtensor/xoffset_view.hpp
  /usr/local/Caskroom/miniconda/base/include/xtensor/xoperation.hpp
  /usr/local/Caskroom/miniconda/base/include/xtensor/xoptional.hpp
@@ -2365,6 +2366,7 @@ CMakeFiles/MLProject.dir/main.cpp.o
  /usr/local/Caskroom/miniconda/base/include/xtl/xoptional.hpp
  /usr/local/Caskroom/miniconda/base/include/xtl/xoptional_meta.hpp
  /usr/local/Caskroom/miniconda/base/include/xtl/xoptional_sequence.hpp
+ /usr/local/Caskroom/miniconda/base/include/xtl/xplatform.hpp
  /usr/local/Caskroom/miniconda/base/include/xtl/xproxy_wrapper.hpp
  /usr/local/Caskroom/miniconda/base/include/xtl/xsequence.hpp
  /usr/local/Caskroom/miniconda/base/include/xtl/xspan.hpp

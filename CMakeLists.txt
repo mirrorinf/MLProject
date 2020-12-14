@@ -19,7 +19,7 @@ message(STATUS "BLAS LIBRARIES: " ${BLAS_LIBRARIES})
 add_definitions(-DHAVE_CBLAS=1)
 add_definitions(-DXTENSOR_USE_XSIMD)
 
-add_executable(MLProject main.cpp Classifier.cpp Classifier.h DecisionTree.cpp DecisionTree.h KNNMNISTClassifier.cpp KNNMNISTClassifier.h Utility.h Utility.cpp AdaBoost.cpp AdaBoost.h WeightedClassifier.h NaiveBayes.cpp NaiveBayes.h)
+add_executable(MLProject main.cpp Classifier.cpp Classifier.h DecisionTree.cpp DecisionTree.h KNN.cpp KNN.h Utility.h Utility.cpp AdaBoost.cpp AdaBoost.h WeightedClassifier.h NaiveBayes.cpp NaiveBayes.h)
 
 target_include_directories(MLProject PUBLIC ${xtensor_INCLUDE_DIRS})
 target_link_libraries(MLProject PUBLIC xtensor xtensor::optimize xtensor::use_xsimd ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES})

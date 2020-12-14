@@ -2,12 +2,12 @@
 // Created by ChuXiaoMin on 2020/12/10.
 //
 
-#include "KNNMNISTClassifier.h"
+#include "KNN.h"
 #include <xtensor-blas/xlinalg.hpp>
 #include <assert.h>
 #include <algorithm>
 
-KNNMNISTClassifier::KNNMNISTClassifier(int n_classes, xt::xarray<double> stored_examples_x, std::vector<int> stored_examples_y) {
+KNN::KNN(int n_classes, xt::xarray<double> stored_examples_x, std::vector<int> stored_examples_y) {
     // check shapes
     const auto& s = stored_examples_x.shape();
     assert(s.size() == 2);
@@ -23,7 +23,7 @@ KNNMNISTClassifier::KNNMNISTClassifier(int n_classes, xt::xarray<double> stored_
     this->stored_examples_y = stored_examples_y;
 }
 
-std::vector<std::vector<int>> KNNMNISTClassifier::predict(xt::xarray<double> x, std::vector<int> ks) {
+std::vector<std::vector<int>> KNN::predict(xt::xarray<double> x, std::vector<int> ks) {
     // check shapes
     const auto& s1 = x.shape();
     const auto& s2 = stored_examples_x.shape();
@@ -33,10 +33,13 @@ std::vector<std::vector<int>> KNNMNISTClassifier::predict(xt::xarray<double> x, 
     int M = s1[0];
     xt::xarray<double> cross_distance = xt::linalg::dot(x, stored_examples_x);
 
+    std::cout << "cross distance." << std::endl;
+
     int K = *std::max_element(ks.begin(), ks.end());
 
     std::vector<std::vector<int>> choices;
     for (int i = 0; i < K; i++) {
+        std::cout << "nearest: " << i << std::endl;
         xt::xarray<int> max_indices = xt::argmax(cross_distance, 1);
         std::vector<int> chosen(M, 0);
         for (int j = 0; j < M; j++) {
@@ -49,6 +52,7 @@ std::vector<std::vector<int>> KNNMNISTClassifier::predict(xt::xarray<double> x, 
     xt::xarray<int> count = xt::zeros<int>({M, n_classes});
     std::vector<std::vector<int>> result;
     for (int i = 0; i < K; i++) {
+        std::cout << "accumulate: " << i << std::endl;
         for (int j = 0; j < M; j++) {
             count(j, choices[i][j])++;
         }

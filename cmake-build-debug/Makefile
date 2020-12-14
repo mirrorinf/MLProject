@@ -224,32 +224,32 @@ DecisionTree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLProject.dir/build.make CMakeFiles/MLProject.dir/DecisionTree.cpp.s
 .PHONY : DecisionTree.cpp.s
 
-KNNMNISTClassifier.o: KNNMNISTClassifier.cpp.o
+KNN.o: KNN.cpp.o
 
-.PHONY : KNNMNISTClassifier.o
+.PHONY : KNN.o
 
 # target to build an object file
-KNNMNISTClassifier.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLProject.dir/build.make CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.o
-.PHONY : KNNMNISTClassifier.cpp.o
+KNN.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLProject.dir/build.make CMakeFiles/MLProject.dir/KNN.cpp.o
+.PHONY : KNN.cpp.o
 
-KNNMNISTClassifier.i: KNNMNISTClassifier.cpp.i
+KNN.i: KNN.cpp.i
 
-.PHONY : KNNMNISTClassifier.i
+.PHONY : KNN.i
 
 # target to preprocess a source file
-KNNMNISTClassifier.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLProject.dir/build.make CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.i
-.PHONY : KNNMNISTClassifier.cpp.i
+KNN.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLProject.dir/build.make CMakeFiles/MLProject.dir/KNN.cpp.i
+.PHONY : KNN.cpp.i
 
-KNNMNISTClassifier.s: KNNMNISTClassifier.cpp.s
+KNN.s: KNN.cpp.s
 
-.PHONY : KNNMNISTClassifier.s
+.PHONY : KNN.s
 
 # target to generate assembly for a file
-KNNMNISTClassifier.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLProject.dir/build.make CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.s
-.PHONY : KNNMNISTClassifier.cpp.s
+KNN.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MLProject.dir/build.make CMakeFiles/MLProject.dir/KNN.cpp.s
+.PHONY : KNN.cpp.s
 
 NaiveBayes.o: NaiveBayes.cpp.o
 
@@ -350,9 +350,9 @@ help:
 	@echo "... DecisionTree.o"
 	@echo "... DecisionTree.i"
 	@echo "... DecisionTree.s"
-	@echo "... KNNMNISTClassifier.o"
-	@echo "... KNNMNISTClassifier.i"
-	@echo "... KNNMNISTClassifier.s"
+	@echo "... KNN.o"
+	@echo "... KNN.i"
+	@echo "... KNN.s"
 	@echo "... NaiveBayes.o"
 	@echo "... NaiveBayes.i"
 	@echo "... NaiveBayes.s"

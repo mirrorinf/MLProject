@@ -116,18 +116,18 @@ CMakeFiles/MLProject.dir/DecisionTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MLProject.dir/DecisionTree.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chuxiaomin/CLionProjects/MLProject/DecisionTree.cpp -o CMakeFiles/MLProject.dir/DecisionTree.cpp.s
 
-CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.o: CMakeFiles/MLProject.dir/flags.make
-CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.o: ../KNNMNISTClassifier.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.o -c /Users/chuxiaomin/CLionProjects/MLProject/KNNMNISTClassifier.cpp
+CMakeFiles/MLProject.dir/KNN.cpp.o: CMakeFiles/MLProject.dir/flags.make
+CMakeFiles/MLProject.dir/KNN.cpp.o: ../KNN.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MLProject.dir/KNN.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MLProject.dir/KNN.cpp.o -c /Users/chuxiaomin/CLionProjects/MLProject/KNN.cpp
 
-CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chuxiaomin/CLionProjects/MLProject/KNNMNISTClassifier.cpp > CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.i
+CMakeFiles/MLProject.dir/KNN.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MLProject.dir/KNN.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chuxiaomin/CLionProjects/MLProject/KNN.cpp > CMakeFiles/MLProject.dir/KNN.cpp.i
 
-CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chuxiaomin/CLionProjects/MLProject/KNNMNISTClassifier.cpp -o CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.s
+CMakeFiles/MLProject.dir/KNN.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MLProject.dir/KNN.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chuxiaomin/CLionProjects/MLProject/KNN.cpp -o CMakeFiles/MLProject.dir/KNN.cpp.s
 
 CMakeFiles/MLProject.dir/Utility.cpp.o: CMakeFiles/MLProject.dir/flags.make
 CMakeFiles/MLProject.dir/Utility.cpp.o: ../Utility.cpp
@@ -173,7 +173,7 @@ MLProject_OBJECTS = \
 "CMakeFiles/MLProject.dir/main.cpp.o" \
 "CMakeFiles/MLProject.dir/Classifier.cpp.o" \
 "CMakeFiles/MLProject.dir/DecisionTree.cpp.o" \
-"CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.o" \
+"CMakeFiles/MLProject.dir/KNN.cpp.o" \
 "CMakeFiles/MLProject.dir/Utility.cpp.o" \
 "CMakeFiles/MLProject.dir/AdaBoost.cpp.o" \
 "CMakeFiles/MLProject.dir/NaiveBayes.cpp.o"
@@ -184,7 +184,7 @@ MLProject_EXTERNAL_OBJECTS =
 MLProject: CMakeFiles/MLProject.dir/main.cpp.o
 MLProject: CMakeFiles/MLProject.dir/Classifier.cpp.o
 MLProject: CMakeFiles/MLProject.dir/DecisionTree.cpp.o
-MLProject: CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.o
+MLProject: CMakeFiles/MLProject.dir/KNN.cpp.o
 MLProject: CMakeFiles/MLProject.dir/Utility.cpp.o
 MLProject: CMakeFiles/MLProject.dir/AdaBoost.cpp.o
 MLProject: CMakeFiles/MLProject.dir/NaiveBayes.cpp.o

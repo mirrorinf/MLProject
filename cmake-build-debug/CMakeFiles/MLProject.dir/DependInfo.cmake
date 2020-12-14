@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/chuxiaomin/CLionProjects/MLProject/AdaBoost.cpp" "/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/CMakeFiles/MLProject.dir/AdaBoost.cpp.o"
   "/Users/chuxiaomin/CLionProjects/MLProject/Classifier.cpp" "/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/CMakeFiles/MLProject.dir/Classifier.cpp.o"
   "/Users/chuxiaomin/CLionProjects/MLProject/DecisionTree.cpp" "/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/CMakeFiles/MLProject.dir/DecisionTree.cpp.o"
-  "/Users/chuxiaomin/CLionProjects/MLProject/KNNMNISTClassifier.cpp" "/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/CMakeFiles/MLProject.dir/KNNMNISTClassifier.cpp.o"
+  "/Users/chuxiaomin/CLionProjects/MLProject/KNN.cpp" "/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/CMakeFiles/MLProject.dir/KNN.cpp.o"
   "/Users/chuxiaomin/CLionProjects/MLProject/NaiveBayes.cpp" "/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/CMakeFiles/MLProject.dir/NaiveBayes.cpp.o"
   "/Users/chuxiaomin/CLionProjects/MLProject/Utility.cpp" "/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/CMakeFiles/MLProject.dir/Utility.cpp.o"
   "/Users/chuxiaomin/CLionProjects/MLProject/main.cpp" "/Users/chuxiaomin/CLionProjects/MLProject/cmake-build-debug/CMakeFiles/MLProject.dir/main.cpp.o"

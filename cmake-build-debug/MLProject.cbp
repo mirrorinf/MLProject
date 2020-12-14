@@ -104,10 +104,10 @@
 		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/DecisionTree.h">
 			<Option target="MLProject"/>
 		</Unit>
-		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/KNNMNISTClassifier.cpp">
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/KNN.cpp">
 			<Option target="MLProject"/>
 		</Unit>
-		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/KNNMNISTClassifier.h">
+		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/KNN.h">
 			<Option target="MLProject"/>
 		</Unit>
 		<Unit filename="/Users/chuxiaomin/CLionProjects/MLProject/NaiveBayes.cpp">
