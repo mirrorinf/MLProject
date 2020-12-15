@@ -7,6 +7,7 @@
 #include <fstream>
 #include <exception>
 #include <map>
+#include <array>
 
 namespace MNISTUtility {
     int reverse_int(int i) {
@@ -148,5 +149,28 @@ namespace MushroomUnility {
         }
 
         return std::make_tuple(x_train, y_train, n_value);
+    }
+}
+
+namespace SST2Utility {
+    int ranged(double x) {
+        constexpr std::array<double, 25> split_points = {1e-5, 2e-5, 4e-5, 8e-5, 1e-4, 2e-4, 3e-4, 4e-4, 5e-4,6e-4, 7e-4, 8e-4, 9e-4, 1e-3, 2e-3, 3e-3, 4e-3, 5e-3, 6e-3, 7e-3, 8e-3, 9e-3, 1e-2, 2e-2, 4e-2};
+        for (int i = 0; i < 25; i++) {
+            if (x < split_points[i]) {
+                return i;
+            }
+        }
+        return 25;
+    }
+
+    xt::xarray<int> split(xt::xarray<double> &x) {
+        const auto& shape = x.shape();
+        xt::xarray<int> final = xt::zeros<int>(shape);
+        for (int i = 0; i < shape[0]; i++) {
+            for (int j = 0; j < shape[1]; j++) {
+                final(i, j) = ranged(x(i, j));
+            }
+        }
+        return final;
     }
 }

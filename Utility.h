@@ -22,4 +22,8 @@ namespace MushroomUnility {
     std::tuple<xt::xarray<int>, std::vector<int>, std::vector<int>> read_dataset(const std::string &path);
 }
 
+namespace SST2Utility {
+    xt::xarray<int> split(xt::xarray<double> &x);
+}
+
 #endif //MLPROJECT_UTILITY_H
